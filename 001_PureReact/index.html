@@ -9,9 +9,10 @@
     
         <script>
             // Pure React and JavaScript code
-            var dish = React.createElement("h1", null, "Baked Salmon");
+            var dish = React.createElement("h1", {id: "backed-salmon"}, "Baked Salmon");
 
             ReactDOM.render(dish, document.getElementById('react-container'));
+            console.log(dish);
         </script>
 
     </body>
