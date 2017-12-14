@@ -19,9 +19,15 @@
                 React.createElement("li", null, "3 cloves of Garlic")
             );
 
-            var dish = React.createElement("section", {id: "backed-salmon"}, heading, ingredients);
+            var cookingInstructions = React.createElement("section", {"className": "instructions"},
+                React.createElement("h2", null, "Cooking Instructions"),
+            );
+
+            var dish = React.createElement("section", {id: "backed-salmon"}, heading, ingredients, cookingInstructions);
 
             ReactDOM.render(dish, document.getElementById('react-container'));
+            console.log('dish', dish);
+            console.log('ingredients', ingredients);
         </script>
 
     </body>
