@@ -19,6 +19,15 @@
                 "Remove from oven and let cool for 15 ...."
             ];
 
+            var steps2 = [
+                "*Preheat the oven to 350 degrees.",
+                "*Spread the olive oil around a glass baking dish.",
+                "*Add the salmon, garlic, and pine...",
+                "*Bake for 15 minutes.",
+                "*Add the yellow squash and put...",
+                "*Remove from oven and let cool for 15 ...."
+            ];
+
 
             const stepsList = React.createClass(
                 {
@@ -34,8 +43,11 @@
                     }
                 }
             );
+            const stepsComp1 = React.createElement(stepsList, {steps}, null);
+            const stepsComp2 = React.createElement(stepsList, {steps: steps2}, null);
+            const section = React.createElement("section", null, stepsComp1, stepsComp2)
 
-            ReactDOM.render(React.createElement(stepsList, {steps}, null), document.getElementById('react-container'));
+            ReactDOM.render(section, document.getElementById('react-container'));
         </script>
 
     </body>
