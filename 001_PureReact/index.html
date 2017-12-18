@@ -28,7 +28,7 @@
                 React.createElement("li", null, "3 cloves of Garlic")
             );
 
-            var cookingSteps = React.createElement("section", null, cookingStepsData.map(step, index => React.createElement("p", {key: index}, step)));
+            var cookingSteps = React.createElement("section", null, cookingStepsData.map((step, index) => React.createElement("p", {key: index}, step)));
 
             var cookingInstructions = React.createElement("section", {"className": "instructions"},
                 React.createElement("h2", null, "Cooking Instructions"),
