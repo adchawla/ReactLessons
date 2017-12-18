@@ -28,12 +28,12 @@
                     "*Remove from oven and let cool for 15 ...."
                 ];
 
-                const stepsList = props => 
+                const stepsList = ({steps}) => 
                     React.createElement(
                         "ul", {
                             className: "cookingSteps"
                         },
-                        props.steps.map((step, index) => React.createElement("li", { key: index }, step))
+                        steps.map((step, index) => React.createElement("li", { key: index }, step))
                     );
 
                 const stepsComp1 = React.createElement(stepsList, {steps}, null);
